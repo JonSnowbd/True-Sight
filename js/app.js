@@ -10,12 +10,15 @@ var TrueSight = (function(){
             vidname:"8CullingBlade",
             hero:"Axe",
             poster:"static/image/poster/"+this.hero+".jpg"
+        },
+        {
+            vidname:"TimberUltrakill",
+            hero:"Timbersaw",
+            poster:"static/image/poster/"+this.hero+".jpg"
         }
     ];
 
     this.volume = 0.5;
-
-    var spotlight = videojs('spotlightVideo');
     var parent = this;
 
     this.init = function(){
