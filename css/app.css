@@ -2,33 +2,69 @@ body{
     background:url('../static/image/background.png');
     color:#f2f2f2 !important;
 }
+.fixedContainer{
+    width:800px;
+    margin:auto;
+    position:relative;
+}
+
+header{
+    height:100px;
+    background:rgba(0,0,0,0.2);
+
+    margin-bottom:50px;
+
+    line-height:100px;
+    text-align:center;
+}
+header h1{
+    z-index:2;
+}
+header img{
+    position:absolute;
+    top:0;left:280px;bottom:0;
+    margin:auto;
+    z-index:1;
+}
 
 /*Skinning the player a bit*/
 .vjs-control-bar{
     z-index:2;
 }
-video .title{
+.title{
+    transform-origin:bottom left;
+    transform:rotate(90deg);
     position:absolute;
     z-index:4;
+    left:820px;
+    top:-25px;
+
+
+    white-space:nowrap;
+}
+.title small{
+    opacity:0.5;
 }
 
 /*Each Video has its own strip*/
 .strip{
-    background:#333;
+    background:linear-gradient(90deg, rgba(127,80,112,0.8), rgba(0,0,0,0));
     height:360px;
+
+    margin-bottom:64px;
 }
 /*Inner strip*/
 .anchor{
     position:relative;
 }
-.anchor #spotlightVideo{
+.anchor .video-js{
     margin-left:180px;
 }
 .anchor img{
     position:absolute;
     z-index:1;
-    left:-250px;
-    top:-40px;
-
     pointer-events:none;
 }
+
+/*Each hero's image offset*/
+.axe, .kunkka{ left:-250px; top:-30px; }

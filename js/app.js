@@ -9,7 +9,9 @@ var TrueSight = (function(){
 
     defaultVol = localStorage.getItem("volume");
 
-    spotlight.volume(defaultVol);
+    spotlight.ready(function(){
+        this.volume(defaultVol);
+    });
 
     this.rememberVolume = function(){
         if(spotlight.volume() != defaultVol){

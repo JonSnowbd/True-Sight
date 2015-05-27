@@ -12,26 +12,44 @@
         <!-- dont you give me crap for putting JS in the head, its require for this library -->
         <script src="lib/video.js"></script>
         <script>
-        videojs.options.flash.swf = "lib/video-js.swf"
+            videojs.options.flash.swf = "lib/video-js.swf";
         </script>
 
     </head>
 
     <body>
 
-        <header class="container">
-            <h1>Dota Truesight</h1>
+        <header >
+            <div class="fixedContainer">
+                <h1>Dota Truesight</h1>
+                <img src="static/image/logo32.png" alt="">
+            </div>
         </header>
 
         <div class="strip">
-            <div class="container anchor">
-                <img src="static/image/axe.png" alt="">
-                <video id="spotlightVideo" class="video-js vjs-default-skin"
+            <div class="fixedContainer anchor">
+                <img class="kunkka" src="static/image/Kunkka.png" alt="">
+                <h2 class="title">One Hit Rampage <small>Kunkka</small></h2>
+                <video id="spotlightVideo" class="video-js vjs-default-skin vjs-big-play-centered"
                 controls preload="auto" width="640" height="360"
-                poster="static/image/kunkkaPoster.jpg"
+                poster="static/image/poster/Kunkka.jpg"
                 data-setup='{"volume":0.5}'>
-                    <h2 class="title">One Hit Rampage <small>Kunkka</small></h2>
-                    <source src="static/video/kunkka1hit.webm" type='video/webm' />
+                    <source src="static/video/OneHitRampage.webm" type='video/webm' />
+                    <source src="static/video/OneHitRampage.mp4" type='video/mp4' />
+                </video>
+            </div>
+        </div>
+
+        <div class="strip">
+            <div class="fixedContainer anchor">
+                <img class="axe" src="static/image/Axe.png" alt="">
+                <h2 class="title">8 Culling Blades in one fight <small>Axe</small></h2>
+                <video id="spotlightVideo2" class="video-js vjs-default-skin vjs-big-play-centered"
+                controls preload="auto" width="640" height="360"
+                poster="static/image/poster/Axe.jpg"
+                data-setup='{"volume":0.5}'>
+                    <source src="static/video/OneHitRampage.webm" type='video/webm' />
+                    <source src="static/video/OneHitRampage.mp4" type='video/mp4' />
                 </video>
             </div>
         </div>
