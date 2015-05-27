@@ -1,0 +1,34 @@
+body{
+    background:url('../static/image/background.png');
+    color:#f2f2f2 !important;
+}
+
+/*Skinning the player a bit*/
+.vjs-control-bar{
+    z-index:2;
+}
+video .title{
+    position:absolute;
+    z-index:4;
+}
+
+/*Each Video has its own strip*/
+.strip{
+    background:#333;
+    height:360px;
+}
+/*Inner strip*/
+.anchor{
+    position:relative;
+}
+.anchor #spotlightVideo{
+    margin-left:180px;
+}
+.anchor img{
+    position:absolute;
+    z-index:1;
+    left:-250px;
+    top:-40px;
+
+    pointer-events:none;
+}
